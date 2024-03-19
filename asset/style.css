@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+  background: #000;
+display: flex;
+justify-content: space-around;
+padding:15px 0px;
+position: relative;
+
+ 
+}
+
+
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px 20px;
+
+    display:inline-block;
+  }
+  header .nav a{
+    position: relative;
+  }
+
+  header .nav a:hover{
+    color: #fff;
+    background-color: red;
+  }
+
+  header .nav a:before{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+border: 3px solid red;
+border-width: 0 0 2px 2px;
+transition: .5s;
+opacity: 0;
+  }
+  header .nav a:hover:before{
+    
+    bottom: -6px;
+    left: -6px;
+    opacity: 1;}
+
+
+  header .nav a:after{
+    content: '';
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+border: 3px solid red;
+border-width: 2px 2px 0 0;
+transition: .5s;
+opacity: 0;
+
+  }
+  header .nav a:hover:after{
+    
+    top: -6px;
+    right: -6px;
+    opacity: 1;}
+
+
+
+/* The hero image */
+.hero-image {
+  background-image:  url("./img/coffeehouse.jpg");
+  height: calc(100vh - 70px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.hero-text {
+  font-size: 36px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  /*
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;*/
+}
+
+.search-container {
+  position: relative;}
+
+  @media screen and (min-width:400px) {
+    .search-container input[type=search] {
+  position: relative;
+  float: none;
+  display: block;
+  text-align: left;
+  width: 400px;
+  margin: 0;
+  padding: 12px;
+}}
+.search-container input[type=search] {
+  border: 1px solid #ccc;  
+}
+.search-container button {
+  position: absolute;
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  right: -10px;
+  top: -3px;
+}
+
+
+.hero-image .p1 {
+  color: #fff;
+  background-color: #000;
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+
+  padding: 5px 5px;
+}
+
+.hero-image .p2 {
+  color: #fff;
+  position: absolute;
+
+  bottom: 10px;
+  right: 30px;
+  
+  padding: 5px 5px;
+}
+
+
+@media screen and (min-width:991px) {
+section{
+  
+  padding: 30px 260px;
+  background-color: #f7f5f2ff;
+  
+  
+}}
+ .about h2{
+  background-color: #000;
+  color: #fff;
+  padding: 2px 2px;
+width: max-content;  
+margin: 36px auto;
+font-weight: 400;
+}
+.quotation{
+  margin: 20px 0px;
+  background-color: #f2f2f2ff;
+  border-left: 6px solid #CCCCCC;
+  padding-left: 26px;
+  padding-bottom:10px;
+ font-style: italic;
+}
+
+
+
+
+ .about p{
+  display: flex;
+  font-size: 18px;
+  text-align: left;
+  padding-top: 20px;
+  line-height: 2;
+ }
+ .coffeeshopsec p{
+  margin:10px 0px;
+  font-size: 20px;
+ }
+
+ .menu h2{
+  background-color: #000;
+  color: #ffffff;
+  padding: 2px 2px;
+width: max-content;  
+margin: 36px auto;
+font-weight: 400;
+}
+
+.tabcont{
+  width: 100%;  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+padding: 20px; margin-bottom: 60px;
+}
+.tabtitle{
+  width: 100%;  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+;padding: 20px; 
+}
+.tabtitle button{
+  width: 48%;
+}
+.tabtitle .btn2{
+  border: none;
+  font-size: 18px;
+  background-color:#ffffff00 ;
+}
+.tabtitle .btn3{
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  background-color: #616161;
+  padding: 5px 0px;
+}
+
+.tabcont h3{
+  padding:12px 0px;
+}
+.tabcont p{
+  margin-bottom: 40px;
+}
+
+.map h2{
+  background-color: #000;
+  color: #fff;
+  padding: 2px 2px;
+width:max-content;  
+margin: 36px auto;
+font-weight: 400;
+}
+.map p{
+  margin:10px 0px;
+  font-size: 20px;
+ }
+
+ .fy{
+  background-color: #000;
+                    color: #fff;
+                    padding: 2px 2px;
+                  max-width: 40px;  
+                  margin: 36px auto;
+                  text-align: center;
+                  font-weight: 400;
+ }
+ .formmap{
+ 
+  padding: 16px 4px;
+  display: block;
+  border:none;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin: 16px 0px;
+    
+ }
+ .btn{
+  background-color: #000;
+  color: #fff;
+  border: none;
+    display: inline-block;
+    padding: 14px 16px;
+  
+    text-align: center;
+ }
+
+ footer{
+  background-color: #f2f2f2ff;
+  padding: 50px 0px;
+ }
+ footer p{
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+ }
+ footer p a{
+color: #000;  
+text-decoration: underline;
+ }
+
+ input:hover{
+  background-color: red;
+}
+.btn:hover{
+  border:2px solid red;
+  background-color: #fff;
+  color: #000;
+}
+.btn3:hover{
+  border:2px solid red;
+  background-color: #fff;
+  color: #000;
+}
+.btn2:hover{
+  background-color: red;
+  padding: 5px 0px;
+}
+
+.about h2:hover{
+background-color: red;
+}
+
+.menu h2:hover{
+  background-color: red;
+
+}
+
+.map h2:hover{
+  background-color: red;
+
+}
